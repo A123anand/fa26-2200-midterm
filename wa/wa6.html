@@ -77,6 +77,9 @@
 
         /* Typography Styles */
         h1 {
+            font-family: "Racing Sans One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: var(--spacing-md);
@@ -84,6 +87,9 @@
         }
 
         h2 {
+            font-family: "potta-one", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 2rem;
             font-weight: 600;
             margin-bottom: var(--spacing-md);
@@ -91,6 +97,9 @@
         }
 
         h3 {
+            font-family: "black-han-sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 1.5rem;
             font-weight: 500;
             margin-bottom: var(--spacing-sm);
@@ -98,13 +107,16 @@
         }
 
         .body-text {
+            font-family: "lato", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             font-size: 1rem;
             margin-bottom: var(--spacing-md);
         }
 
         .small-text {
             font-size: 0.75rem;
-            color: color-mix(in srgb, var(--color-text-dark) 70%, transparent);
+            color: var(--color-neutral);
         }
 
         /* Color Palette Section */
@@ -181,34 +193,34 @@
 </head>
 <body>
     <div class="container">
-        <h1>Design System Template</h1>
+        <h1 >Design System Template</h1>
 
         <section>
-            <h2>Color Palette</h2>
+            <h2 >Color Palette</h2>
             <div class="color-palette">
                 <div class="color-swatch" style="background-color: var(--color-primary); color: var(--color-text-light);">
                     <strong>Primary Color</strong>
-                    <p>#3498db</p>
+                    <p class="body-text">#3498db</p>
                     <small>Contrast Ratio: 4.6:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-secondary); color: var(--color-text-light);">
                     <strong>Secondary Color</strong>
-                    <p>#2ecc71</p>
+                    <p class="body-text">#2ecc71</p>
                     <small>Contrast Ratio: 4.8:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-accent); color: var(--color-text-light);">
                     <strong>Accent Color</strong>
-                    <p>#e74c3c</p>
+                    <p class="body-text">#e74c3c</p>
                     <small>Contrast Ratio: 4.5:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-neutral); color: var(--color-text-light);">
                     <strong>Neutral Color</strong>
-                    <p>#34495e</p>
+                    <p class="body-text">#34495e</p>
                     <small>Contrast Ratio: 4.7:1</small>
                 </div>
                 <div class="color-swatch" style="background-color: var(--color-highlight); color: var(--color-text-dark);">
                     <strong>Highlight Color</strong>
-                    <p>#f1c40f</p>
+                    <p class="body-text">#f1c40f</p>
                     <small>Contrast Ratio: 4.9:1</small>
                 </div>
             </div>
@@ -216,22 +228,45 @@
 
         <section>
             <h2>Typography</h2>
-            <h1>Heading 1 - Racing Sans One</h1>
-            <h2>Heading 2 - Potta One</h2>
-            <h3>Heading 3 - Black  Han Sans</h3>
+            <h1 >Heading 1 - Racing Sans One</h1>
+            <h2 class="potta-one">Heading 2 - Potta One</h2>
+            <h3 class= h3>Heading 3 - Black  Han Sans</h3>
             <p class="body-text">Body Text - Using Lato with a comfortable line height and readable size.</p>
             <p class="small-text">Small Text - Subtle and understated, perfect for annotations and footnotes.</p>
         </section>
 
         <section>
             <h2>Spacing System</h2>
-            <div class="spacing-demo">
+            <!-- <div class="spacing-demo">
                 <div class="spacing-block" style="width: var(--spacing-xs)"></div>
                 <div class="spacing-block" style="width: var(--spacing-sm)"></div>
                 <div class="spacing-block" style="width: var(--spacing-md)"></div>
                 <div class="spacing-block" style="width: var(--spacing-lg)"></div>
                 <div class="spacing-block" style="width: var(--spacing-xl)"></div>
-            </div>
+            </div> -->
+  <dl class="spacing-demo" style="flex-direction: column; align-items: flex-start; gap: var(--spacing-sm); margin: 0;">
+    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin: 0;">
+        <dt class="spacing-block" style="width: var(--spacing-xs); height: 24px;" aria-hidden="true"></dt>
+        <dd class="small-text" style="font-family: var(--font-secondary); margin: 0;">--spacing-xs (0.3rem)</dd>
+    </div>
+    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin: 0;">
+        <dt class="spacing-block" style="width: var(--spacing-sm); height: 24px;" aria-hidden="true"></dt>
+        <dd class="small-text" style="font-family: var(--font-secondary); margin: 0;">--spacing-sm (0.6rem)</dd>
+    </div>
+    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin: 0;">
+        <dt class="spacing-block" style="width: var(--spacing-md); height: 24px;" aria-hidden="true"></dt>
+        <dd class="small-text" style="font-family: var(--font-secondary); margin: 0;">--spacing-md (0.9rem)</dd>
+    </div>
+    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin: 0;">
+        <dt class="spacing-block" style="width: var(--spacing-lg); height: 24px;" aria-hidden="true"></dt>
+        <dd class="small-text" style="font-family: var(--font-secondary); margin: 0;">--spacing-lg (1.2rem)</dd>
+    </div>
+    <div style="display: flex; align-items: center; gap: var(--spacing-sm); margin: 0;">
+        <dt class="spacing-block" style="width: var(--spacing-xl); height: 24px;" aria-hidden="true"></dt>
+        <dd class="small-text" style="font-family: var(--font-secondary); margin: 0;">--spacing-xl (2.4rem)</dd>
+    </div>
+</dl>
+</div>
             <p>Spacing blocks demonstrating size variations from xs to xl</p>
         </section>
 
