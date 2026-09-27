@@ -21,7 +21,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;                   
+  color: white;   
+  font-family: "black-han-sans", sans-serif;
+font-weight: 400;
+font-style: normal;                
 }
 .home-button {
   position: fixed;
