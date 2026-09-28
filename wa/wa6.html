@@ -9,9 +9,9 @@
         :root {
             /* Color Palette - 5 Core Colors */
             --color-primary: #223843;     /* Darker Blue - Main text color */
-            --color-secondary: #F2F2ED;   /* cream - Complementary Action Color */
-            --color-accent: #4191BF;      /* lighter blue- Highlight / Warning Color */
-            --color-neutral: #FB3640;     /* broght red - Neutral Text and Background */
+            --color-neutral: #F2F2ED;   /* cream - Complementary Action Color */
+            --color-secondary: #4191BF;      /* lighter blue- Highlight / Warning Color */
+            --color-accent: #FB3640;     /* broght red - Neutral Text and Background */
             --color-highlight: #FFD400;   /* Bright Yellow - Accent / Attention Color */
             
             /* Derived Colors for Flexibility */
@@ -112,11 +112,12 @@
             font-style: normal;
             font-size: 1rem;
             margin-bottom: var(--spacing-md);
+            color: var(--color-primary);
         }
 
         .small-text {
             font-size: 0.75rem;
-            color: var(--color-neutral);
+            color: var(--color-primary);
         }
 
         /* Color Palette Section */
@@ -150,7 +151,7 @@
         }
 
         .button:hover {
-            background-color: color-mix(in srgb, var(--color-primary) 80%, black);
+            background-color: color-mix(in srgb, var(--color-secondary) 70%, black);
             border-color: var(--color-secondary);
             transform: scale(1.05);
         }
