@@ -150,10 +150,12 @@ font-style: normal;
   margin-top: 20px;
 }
 .footer {
-  background-color: #f1f1f1;
-  padding: 20px;
+  background-color: #5D2D37;
+  color:#ffffff;
   text-align: center;
   margin-top: 20px;
+  padding: 20px;
+  
 }
 .submenuR, .submenuA {
   display: block; /* Hide by default, toggle with JS or hover */
