@@ -290,3 +290,45 @@ a.image-container {
 a.image-container:hover {
   transform: scale(1.05);
 }
+/* Physical block styling */
+.physical-block {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: #0099ff;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-block:active {
+      transform: translateY(6px);
+      /* box-shadow: 
+        0 4px 0 #1b4f72, 
+        0 8px 10px rgba(0, 0, 0, 0.4); */
+    }
+
+.row { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 24px; }
+.row img { width: 40%; height: auto; }
+.text { flex: 1; margin-top: 0; }
+/* .text p { margin-top: 0; } */
