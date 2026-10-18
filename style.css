@@ -291,7 +291,7 @@ a.image-container:hover {
   transform: scale(1.05);
 }
 /* Physical block styling */
-.physical-block {
+.physical-blockC {
       /* Dimensions and shape */
       width: 150px;
       height: 150px;
@@ -312,6 +312,155 @@ a.image-container:hover {
       align-items: center;
       justify-content: center;
       color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-blockS {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: #ffff00;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-block3d{
+  /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: Purple;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+}
+/* physical-blockL */
+.physical-blockL {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+.physical-blockW {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: pink;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+.physical-blockT {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: GREEN;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+
+.physical-blockE {
+      /* Dimensions and shape */
+      width: 150px;
+      height: 150px;
+      background-color: #00ffff;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
       font-weight: bold;
       font-family: sans-serif;
       flex-basis: 100%;
