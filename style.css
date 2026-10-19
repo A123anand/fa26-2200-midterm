@@ -100,7 +100,7 @@ a {
 }
 .site-header {
   background-image: url('pictures/explosion-1.jpg');
-  background-color: #CE2C34;
+  background-color: var(--color-neutral);
   background-size: cover;         
   background-position: center;    
   background-repeat: no-repeat;   
@@ -121,8 +121,8 @@ font-style: normal;
   align-items: center;       
   gap: 10px;
   padding: 8px 14px;
-  color: black;
-  background-color: #ccc;
+  color: white;
+  background-color: var(--color-neutral);
   text-decoration: none;     
  font-family: "lato", sans-serif;
   font-weight: 400;
@@ -131,7 +131,7 @@ font-style: normal;
 }
 
 .home-button:hover {
-  background-color: #bbb;
+  background-color:#7d3c49;
 }
 .corner-menu {
   position: fixed;
@@ -173,7 +173,7 @@ font-style: normal;
   font-size: 1.4rem;
   line-height: 0.5;
   color: #fff;
-  background: var(--color-primary);
+  background: var(--color-neutral);
   border: 0;
   border-radius: var(--radius-lg);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
@@ -210,8 +210,7 @@ font-style: normal;
   margin-top: 20px;
 }
 .footer {
-  background-color: #CE2C34;
-  color:#ffffff;
+  background-color: #5D2D37;
   text-align: center;
   margin-top: 20px;
   padding: 20px;
@@ -533,7 +532,7 @@ a.image-container:hover {
   font-weight: bold;
 }
 .footer h1{
-  color: #5D2D37;
+  color: #CE2C34;
 }
 
 
