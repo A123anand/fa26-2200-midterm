@@ -262,6 +262,7 @@ font-style: normal;
   grid-area: 1 / 1;
   place-self: center;
   color: white;
+  font-family: "Black Han Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-align: center;
