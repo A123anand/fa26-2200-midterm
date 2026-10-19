@@ -332,16 +332,7 @@ a.image-container:hover {
       height: 150px;
       background-color: #ffff00;
       border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
+     
       margin: 50px auto;
       display: flex;
       align-items: center;
@@ -380,9 +371,9 @@ a.image-container:hover {
       font-weight: bold;
       font-family: sans-serif;
       flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
+      box-sizing: border-box;
+      padding: 12px;
+      text-align: center;
       /* cursor: pointer; */
       /* transition: all 0.1s ease; */
 }
