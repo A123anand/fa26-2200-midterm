@@ -70,6 +70,7 @@ h1 {
   margin-bottom: var(--spacing-md);
   color: var(--color-primary);
         }
+
 h2 {
   color: #000000;
   text-align: left;
@@ -99,9 +100,8 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;   
-  font-family: "Black Han Sans", sans-serif;
-font-weight: 400;
+font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
 font-style: normal;                
 }
 .home-button {
@@ -116,7 +116,9 @@ font-style: normal;
   color: black;
   background-color: #ccc;
   text-decoration: none;     
-  font-weight: bold;
+ font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   border-radius: 0 0 8px 0;   
 }
 
@@ -151,6 +153,9 @@ font-style: normal;
   width: 280px;
   max-height: calc(100vh - 80px);
   opacity: 0;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .menu-button {
   width: 44px;
@@ -197,7 +202,7 @@ font-style: normal;
   margin-top: 20px;
 }
 .footer {
-  background-color: #5D2D37;
+  background-color: #CE2C34;
   color:#ffffff;
   text-align: center;
   margin-top: 20px;
@@ -327,16 +332,7 @@ a.image-container:hover {
       height: 150px;
       background-color: #ffff00;
       border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
+     
       margin: 50px auto;
       display: flex;
       align-items: center;
@@ -375,9 +371,9 @@ a.image-container:hover {
       font-weight: bold;
       font-family: sans-serif;
       flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
+      box-sizing: border-box;
+      padding: 12px;
+      text-align: center;
       /* cursor: pointer; */
       /* transition: all 0.1s ease; */
 }
@@ -430,7 +426,7 @@ a.image-container:hover {
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
+      color: black;
       font-weight: bold;
       font-family: sans-serif;
       flex-basis: 100%;
