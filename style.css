@@ -91,8 +91,16 @@ h3 {
   margin-bottom: var(--spacing-sm);
   color: var(--color-accent);
         }
+a {
+  text-align:left;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
 .site-header {
   background-image: url('pictures/explosion-1.jpg');
+  background-color: #CE2C34;
   background-size: cover;         
   background-position: center;    
   background-repeat: no-repeat;   
@@ -479,28 +487,59 @@ a.image-container:hover {
 .text { flex: 1; margin-top: 0; }
 /* .text p { margin-top: 0; } */
 
-@media (min-width: 800px){
 
-  .footer{
-    display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1git fr 1fr 1fr;
-    .fbigtext{
-    grid-column: span 2;
-    grid-row: span 2;}
-    .fcontact{
-    grid-area:1/3;
-    }
-    .location{
-      grid-area:3/3;
-    }
-    .footnote{
-      grid-area: 3/1;
-      grid-row: span 2;
-    }
-
-
-
+  @media (min-width: 800px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    column-gap: 2rem;
+    min-height: 400px;
   }
 
+  #fbigtext {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    align-self: center;
+    font-size: clamp(3rem, 5vw, 5.5rem);
+    line-height: 1.1;
+    margin: 0;
+  }
+
+  .footer-links {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  #footnote {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    align-self: end;
+    margin: 0;
+  }
+}
+
+/* Footer text colors (outside the media query so they apply everywhere) */
+.footer p,
+.footer address,
+.footer a, #footnote{
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer h1{
+  color: #5D2D37;
+}
+
+
+
+.footer address {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
 }
