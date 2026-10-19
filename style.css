@@ -182,3 +182,50 @@ font-style: normal;
   display: block;   
 }
 
+main img{
+width: 100%;
+height:auto;
+}
+
+@media (min-width: 800px) {
+  main.faculty section {
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    column-gap: 2rem;
+    align-items: start;
+    margin-bottom: 3rem;
+  }
+
+  /* Odd people: image in column 1 */
+  main.faculty section img {
+    grid-column: 1;
+    grid-row: 1 / span 20;
+    justify-items: stretch;
+  }
+
+  /* All text goes in the center column */
+  main.faculty section > *:not(img) {
+    grid-column: 2;
+  }
+main.faculty section:nth-of-type(even) {
+  background-color: #ffffff;
+}
+main.faculty section:nth-of-type(odd) {
+  background-color: #eaf3fa;
+}
+  /* Even people: image in column 3, right aligned */
+  main.faculty section:nth-of-type(odd) img {
+    grid-column: 3;
+    justify-self: stretch;
+    
+  }
+
+   main.faculty section:nth-of-type(odd) > *:not(img) {
+    justify-items: right;
+    
+  }
+  main.faculty section:nth-of-type(odd) h3 {
+    justify-items: right;
+    
+  }
+}
