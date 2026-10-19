@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Lato:wght@400;700&family=Montserrat&family=Potta+One&family=Racing+Sans+One&display=swap');
+
 :root {
   /* Color Palette - 5 Core Colors */
   --color-primary: #223843;     /* Darker Blue - Main text color */
@@ -65,7 +67,6 @@ h1 {
   font-weight: 400;
   font-style: normal;
   font-size: 3rem;
-  font-weight: 700;
   margin-bottom: var(--spacing-md);
   color: var(--color-primary);
         }
@@ -76,7 +77,6 @@ h2 {
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
-  font-weight: 600;
   margin-bottom: var(--spacing-md);
   color: var(--color-secondary);
 }
@@ -100,7 +100,7 @@ h3 {
   align-items: center;
   justify-content: center;
   color: white;   
-  font-family: "black-han-sans", sans-serif;
+  font-family: "Black Han Sans", sans-serif;
 font-weight: 400;
 font-style: normal;                
 }
