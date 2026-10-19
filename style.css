@@ -477,3 +477,29 @@ a.image-container:hover {
 .row img { width: 40%; height: auto; }
 .text { flex: 1; margin-top: 0; }
 /* .text p { margin-top: 0; } */
+
+@media (min-width: 800px){
+
+  .footer{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1git fr 1fr 1fr;
+    .fbigtext{
+    grid-column: span 2;
+    grid-row: span 2;}
+    .fcontact{
+    grid-area:1/3;
+    }
+    .location{
+      grid-area:3/3;
+    }
+    .footnote{
+      grid-area: 3/1;
+      grid-row: span 2;
+    }
+
+
+
+  }
+
+}
