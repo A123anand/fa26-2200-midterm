@@ -13,9 +13,11 @@
             <span>BTU</span>
         </a>
 
-         <div class="corner-menu">
-  <button id="menu-button">☰</button>
-  <ul class="menu-list">
+<nav class="corner-menu">
+  <!-- <button id="menu-button">☰</button> --> <!-- Old menu button, replaced with accessible version below -->
+  <button id="menu-button" class="menu-button" aria-label="Toggle menu"
+        aria-expanded="false" aria-controls="menu-list">☰</button>
+  <ul class="menu-list" id="menu-list">
     <li><a href="../index.html">Home</a></li>
     <li><a href="../resources.html">Resources</a></li>
     <ul class="submenuR">
@@ -24,7 +26,7 @@
         <li><a href="../resources-html/lasers.html">Laser Cutting</a></li>
         <li><a href="../resources-html/electronics.html">Electronics</a></li>
         <li><a href="../resources-html/sewing.html">Sewing/Textiles</a></li>
-        <li><a href=../resources-html/Wood.html">Woodworking</a></li>
+        <li><a href="../resources-html/Wood.html">Woodworking</a></li>
         <li><a href="../resources-html/tools.html">Tools</a></li>
 
     </ul>
@@ -34,12 +36,12 @@
         <li><a href="../abt-html/support.html">Support</a></li>
         <li><a href="../abt-html/contact.html">Contact</a></li>
     </ul>
+    <li class="divider" role="separator"></li>
     <li><a href="../faculty.html">Faculty</a></li> 
-
     <li><a href="../calendar.html">Calendar</a></li>
     <li><a href="../workshop.html">Workshops</a></li>
   </ul>
-        </div>
+        </nav>
         <div id="pageResources">
             <div class="page-intro">
                 <h1 style="text-align: center;">3D Printing</h1>
@@ -48,9 +50,10 @@
     </header>
     
     <h1>3D Printing</h1>
-        <h2>The Revolution will be Printed</h2>
-    <img src="3dprinters.png" alt="3d printers on site.">
-    <p>3D Printers located in the main space are for intended use only! Additional 3D printers are available for experimentation. Contact a Mischief Maker to set it up. We got you!
+    <h2>The Revolution will be Printed</h2>
+    <!-- <div class="row">    
+    <img src="../pictures/3d_print.jpg" alt="3d printers on site." width="400" height="300"> -->
+    <!-- <p>3D Printers located in the main space are for intended use only! Additional 3D printers are available for experimentation. Contact a Mischief Maker to set it up. We got you!
 3D Printing is also the subject of some workshops. See workshops on the BTU Lab Calendar.
 Jobs are run on a first-come-first-served basis***.
 ! PRUSA SLICER software is provided and required !
@@ -59,16 +62,29 @@ Jobs are run on a first-come-first-served basis***.
 FACULTY: Class assignments requiring 3D printing should be coordinated by LAs, TAs, or instructors. (Questions: "zack.weaver@colorado.edu")
 STUDENTS: Assistance with 3D Printing for class assignments should be coordinated with class LAs or TAs first, then "BTU Mischief Makers", if available.
 EVERYBODY: 3D printing hardware/software update frequently! Make sure you stay up to date, too.</p>
-    <h2>Intended Use</h2>
-    <p>Do not alter any part of the machine.
-BTU uses PLA and ABS material, only. UNLESS other materials are agreed upon with BTU staff.
-Do not train yourself on the use of the machine. There's more to it than YouTube thinks... We're here to help you learn, hands on.
-Do not use third-party slicing software. Use Prusa Slicer, as specified for each machine.
-***We are updating our file management system to streamline your work. For now, please work directly with BTU staff to get your parts going.***</p>
-   
-
-    <aside>
-    <h2>3D PRINTING EQUIPMENT AND MATERIALS</h2>
+</div> -->
+    <div class="row">
+        <img src="../pictures/3d_print.jpg" alt="3D printers on site.">
+        <div class="text">
+            <p>3D Printers located in the main space are for intended use only! Additional 3D printers are available for experimentation. Contact a Mischief Maker to set it up. We got you!</p>
+            <p>3D Printing is also the subject of some workshops. See workshops on the BTU Lab Calendar.<br>
+            Jobs are run on a first-come-first-served basis***.<br>
+            ! PRUSA SLICER software is provided and required !</p>
+            <p><strong>FACULTY:</strong> Class assignments requiring 3D printing should be coordinated by LAs, TAs, or instructors. (Questions: zack.weaver@colorado.edu)</p>
+            <p><strong>STUDENTS:</strong> Assistance with 3D Printing for class assignments should be coordinated with class LAs or TAs first, then "BTU Mischief Makers", if available.</p>
+            <p><strong>EVERYBODY:</strong> 3D printing hardware/software update frequently! Make sure you stay up to date, too.</p>
+        </div>
+    </div>
+    <div style = "text-align: center;">
+        <h2 style="text-align: center;">Intended Use</h2>
+    <ul>
+        <li>Do not alter any part of the machine.</li>
+        <li>BTU uses PLA and ABS material, only, UNLESS other materials are agreed upon with BTU staff.</li>
+        <li>Do not train yourself on the use of the machine. There's more to it than YouTube thinks... We're here to help you learn, hands on.</li>
+        <li>Do not use third-party slicing software. Use Prusa Slicer, as specified for each machine.</li>
+    </ul>
+    <p>***We are updating our file management system to streamline your work. For now, please work directly with BTU staff to get your parts going.***</p>
+    <h2 style="text-align: center;">3D PRINTING EQUIPMENT AND MATERIALS</h2>
 <ul>
     <li>Prusa Mk4 FDM printer (x3)</li>
     <li>Prusa Mk3S+ FDM printer (x3)</li>
@@ -78,6 +94,9 @@ Do not use third-party slicing software. Use Prusa Slicer, as specified for each
     <li>1.75mm ABS filament (black, and random colors)</li>
 </ul>
     <p><em>Additional materials allowed only with staff approval</em></P>
+    </div> <!-- Closing the centered div -->
     </aside>
+    <!-- PURPLE: 3D Printing equipment and materials are labeled Purple -->
+    <div class="physical-block3d">3D Printing equipment and materials are labeled Purple</div>
 </body>
 </html>

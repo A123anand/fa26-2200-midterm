@@ -17,9 +17,12 @@
             <span>BTU</span>
         </a>
 
-        <div class="corner-menu">
-            <button id="menu-button">☰</button>
-            <ul class="menu-list">
+        <nav class="corner-menu" id="corner-menu">
+            <!-- <button id="menu-button">☰</button>
+              -->
+             <button id="menu-button" class="menu-button" aria-label="Toggle menu"
+        aria-expanded="false" aria-controls="menu-list">☰</button>
+            <ul class="menu-list" id="menu-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resources.html">Resources</a></li>
                 <ul class="submenuR">
@@ -38,12 +41,12 @@
                     <li><a href="abt-html/support.html">Support</a></li>
                     <li><a href="abt-html/contact.html">Contact</a></li>
                 </ul>
+                <li class="divider" role="separator"></li>
                 <li><a href="faculty.html">Faculty</a></li>
-
                 <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="workshop.html">Workshops</a></li>
             </ul>
-        </div>
+        </nav>
         <div id="pageResources">
             <div class="page-intro">
                 <h1 style="text-align: center;">Welcome to the BLOW THINGS UP LAB </h1>

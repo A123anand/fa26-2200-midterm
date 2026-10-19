@@ -13,9 +13,11 @@
             <span>BTU</span>
         </a>
 
-         <div class="corner-menu">
-  <button id="menu-button">☰</button>
-  <ul class="menu-list">
+         <nav class="corner-menu">
+  <button id="menu-button" class="menu-button" aria-label="Toggle menu"
+        aria-expanded="false" aria-controls="menu-list">☰</button>
+  <!-- <button id="menu-button">☰</button> -->
+  <ul class="menu-list" id="menu-list">
     <li><a href="../index.html">Home</a></li>
     <li><a href="../resources.html">Resources</a></li>
     <ul class="submenuR">
@@ -24,7 +26,7 @@
         <li><a href="../resources-html/lasers.html">Laser Cutting</a></li>
         <li><a href="../resources-html/electronics.html">Electronics</a></li>
         <li><a href="../resources-html/sewing.html">Sewing/Textiles</a></li>
-        <li><a href=../resources-html/Wood.html">Woodworking</a></li>
+        <li><a href="../resources-html/Wood.html">Woodworking</a></li>
         <li><a href="../resources-html/tools.html">Tools</a></li>
 
     </ul>
@@ -34,12 +36,13 @@
         <li><a href="../abt-html/support.html">Support</a></li>
         <li><a href="../abt-html/contact.html">Contact</a></li>
     </ul>
+    <li class="divider" role="separator"></li>
     <li><a href="../faculty.html">Faculty</a></li> 
 
     <li><a href="../calendar.html">Calendar</a></li>
     <li><a href="../workshop.html">Workshops</a></li>
   </ul>
-        </div>
+        </nav>
         <div id="pageResources">
             <div class="page-intro">
                 <h1 style="text-align: center;">Lasers</h1>
@@ -47,5 +50,7 @@
             </div>
     </header>
     <h1>Lasers</h1>
+    <!-- Laser equipment and materials are labeled RED!!! -->
+    <div class="physical-blockL">Laser equipment and materials are labeled RED</div>
 </body>
 </html>
