@@ -60,6 +60,16 @@ p {
   margin-bottom: var(--spacing-md);
   color: var(--color-primary);
 }
+ul {
+  color:#000000;
+  text-align:left;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
+}
 h1 {
   color: #000000;
   text-align: left;
@@ -87,6 +97,15 @@ h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-accent);
+        }
+  h4 {
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
   font-weight: 500;
   margin-bottom: var(--spacing-sm);
   color: var(--color-accent);
@@ -487,7 +506,59 @@ a.image-container:hover {
 /* .text p { margin-top: 0; } */
 
 
-  @media (min-width: 800px) {
+main.faculty {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Heading and intro text span the full width */
+main.faculty > h2,
+main.faculty > p{
+  grid-column: 1 / -1;
+  margin: 0;
+}
+
+/* Every person is a card */
+main.faculty > section {
+  background-color: color-mix(in srgb, var(--color-secondary) 15%, white);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+main.faculty > section img {
+  width: 100%;
+  aspect-ratio: 1 / 1;      /* square; use 4 / 5 for slightly taller */
+  object-fit: cover;        /* crops to fill instead of stretching */
+  object-position: center top;  /* keeps faces in frame */
+  border-radius: var(--radius-md);
+}
+
+
+/* Footer text colors (outside the media query so they apply everywhere) */
+.footer p,
+.footer address,
+.footer a{
+  color:var(--color-accent);
+  font-weight: bold;
+}
+#footnote{
+  color: white;
+  font-weight: bold;
+}
+.footer h1{
+  color: var(--color-accent);
+}
+
+.footer address {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+ @media (min-width: 800px) {
   .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -522,23 +593,28 @@ a.image-container:hover {
     align-self: end;
     margin: 0;
   }
-}
 
-/* Footer text colors (outside the media query so they apply everywhere) */
-.footer p,
-.footer address,
-.footer a, #footnote{
-  color: #ffffff;
-  font-weight: bold;
-}
-.footer h1{
-  color: #CE2C34;
-}
+  main.faculty {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
+  /* Box 1: Zack spans all 3 columns, with his own image + text layout */
+  #zack {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    column-gap: 2rem;
+    align-items: start;
+  }
 
+  #zack img {
+    grid-column: 1;
+    grid-row: 1 / span 10;
+  }
 
-.footer address {
-  font-family: "lato", sans-serif;
-  font-style: normal;
-  line-height: 1.5;
+  #zack > *:not(img) {
+    grid-column: 2;
+    text-align: left;
+  }
+
 }
