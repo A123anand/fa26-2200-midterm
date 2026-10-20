@@ -225,8 +225,19 @@ a {
   gap: 48px;
   font-family: 'Montserrat', sans-serif;
 }
+.introtext{
+margin-top: 8rem;
+margin-bottom: 8rem;
+}
 
-
+.introtext p{
+  text-align: center;
+  align-items: center;
+  /* font-family: 'Oswald', sans-serif; */
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--color-accent);
+}
 
 .indexquestion {
   position: relative;
