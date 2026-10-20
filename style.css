@@ -229,7 +229,7 @@ a {
 
 .indexquestion{
   position: relative;
-  min-height: 400px;
+  min-height: 600px;
   display: grid;
   place-items: center;          /* centers the content box */
   padding: 2rem;
@@ -241,12 +241,17 @@ a {
   overflow: hidden;
 }
 
-/* Dark layer between the image and the text */
 .indexquestion::before {
   content: "";
   position: absolute;
-  inset: 0;                     /* stretch to all four edges */
-  background: rgba(0, 0, 0, 0.5);
+  inset: 0;
+  background:
+    /* top fade: color of the block ABOVE this section */
+    linear-gradient(to bottom, var(--color-highlight) 0%, transparent 25%),
+    /* bottom fade: color of the block BELOW this section */
+    linear-gradient(to top, var(--color-neutral) 0%, transparent 25%),
+    /* your existing dark layer */
+    rgba(0, 0, 0, 0.5);
 }
 
 .questioncontent {
@@ -346,7 +351,7 @@ dialog::backdrop {
 .footer {
   background-color: #5D2D37;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0;
   padding: 20px;
   
 }
