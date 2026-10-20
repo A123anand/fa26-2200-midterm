@@ -260,19 +260,21 @@ a {
   text-align: center;
 }
 
-.btn1,.btn2,.btn3,.btn4 {
+.btn1, .btn2, .btn3, .btn4, .close-btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   margin: 0.25rem;
   background: var(--color-accent);
-  color:var(--color-highlight);
+  color: var(--color-highlight);
   font-family: "lato", sans-serif;
+  font-size: 1rem;
   font-weight: 700;
-  text-decoration: none;
+  border: 0;
   border-radius: var(--radius-md);
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .close-btn:hover {
   background: #a82229;
 }
 
@@ -287,21 +289,55 @@ a {
   color: var(--color-neutral);
 }
 
-dialog{
+dialog {
   border: none;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   padding: 24px;
   width: 90%;
-  max-width: 400px;
+  max-width: 700px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: var(--color-highlight);
 }
 
-/* Style the dark overlay behind the pop-up */
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+/* Beat the .indexquestion h2 rule (cream text) */
+.indexquestion dialog h2 {
+  color: var(--color-secondary);
+  text-align: left;
+  margin-top: 0;
+}
+
+.popupcontent {
+  display: flex;
+  flex-wrap: wrap;          /* stacks on narrow screens */
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.popupcontent img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  border-radius: var(--radius-md);
+}
+
+.popupcontent iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+.popupcontent .text {
+  flex: 1 1 200px;          /* text takes the remaining space */
+}
+
+.footnote {
+  font-size: 0.8em;
+  margin-top: 1rem;
+}
 #footnote {
   font-size: 0.8em;
   color: #10003b;

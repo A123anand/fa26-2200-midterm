@@ -61,7 +61,7 @@
      <div class="text">
     <p>
         The ATLAS BTU Lab is an inclusive community makerspace facilitating projects at the intersection of Art, Design,
-        Engineering and Architecture. It serves multiple functions as a general workspace, and workshop host. Any CU
+        Engineering and Architecture. It serves multiple functions as a general workspace, and workshop host. Any CU
         student can gain access to BTU.
         Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental
         and productive space.</p>
@@ -125,8 +125,6 @@
         <br> Boulder, CO 80309 <br>
         </p>
         <p>
-        
-
     </p>
     </div>
     
@@ -135,24 +133,66 @@
 
 
 <section class="indexquestion">
-    <div class="questioncontent">
-      <h2>BTU FAQ</h2>
-    <a class="btn1" href="faculty.html">Who</a>
-    <a class="btn2" href="about.html">What</a>
-    <!-- <a class="btn3" href="resources.html">Where</a> -->
-    <a class="btn4" href="resources.html">How</a>
+  <div class="questioncontent">
+    <h2>BTU FAQ</h2>
+    <button class="btn1" data-dialog="dialog-who">Who</button>
+    <button class="btn2" data-dialog="dialog-when">When</button>
+    <button class="btn3" data-dialog="dialog-how">How</button>
+    <button class="btn4" data-dialog="dialog-where">Where</button>
   </div>
-  <!-- <button id="openBtn">Click to Open Pop-Up</button> -->
 
-<!-- The Pop-Up Box -->
-<!-- <dialog id="popup">
-  <h2>Thank You!</h2>
-  <p>Your action was completed successfully.</p>
-  <button id="closeBtn">Close</button>
-</dialog> -->
+<dialog id="dialog-who">
+  <h2>Who?</h2>
+  <div class="popupcontent">
+    <img src="pictures/btu-who.jpg" alt="People in the BTU Lab">
+    <div class="text">
+      <p>Anyone* can gain access to BTU. Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental and productive space.</p>
+      <p class="footnote">*Due to increased campus security, we are currently unable to sponsor BuffOne Guest cards.</p>
+    </div>
+  </div>
+  <button class="close-btn">Close</button>
+</dialog>
 
+<dialog id="dialog-when">
+  <h2>When?</h2>
+  <div class="popupcontent">
+    <img src="pictures/btu-when.jpg" alt="People in the BTU Lab">
+    <div class="text">
+      <p>The orientation* schedule, and all scheduled events can be found on the BTU Calendar.</p>
+      <p class="footnote">*Some things involve separate orientations...like lasers and stuff. Check the calendar and the pages above for your interests.</p>
+    </div>
+  </div>
+  <button class="close-btn">Close</button>
+</dialog>
+
+<dialog id="dialog-how">
+  <h2>How?</h2>
+  <div class="popupcontent">
+    <img src="pictures/btu-when.jpg" alt="People in the BTU Lab">
+    <div class="text">
+      <p>New members attend a 20 minute general orientation covering community expectations, safety and equipment.</p>
+    </div>
+  </div>
+  <button class="close-btn">Close</button>
+</dialog>
+
+<dialog id="dialog-where">
+  <h2>Where?</h2>
+  <div class="popupcontent">
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1528.0212105286407!2d-105.269931!3d40.0075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec33866b4d51%3A0xa4ced41760be8040!2s320%20UCB%2C%201125%2018th%20St%2C%20Boulder%2C%20CO%2080309!5e0!3m2!1sen!2sus!4v1789944792513!5m2!1sen!2sus"
+      title="Map of the BTU Lab"
+      allowfullscreen loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <div class="text">
+      <p>320 UCB<br>1125 18th St<br>Boulder, CO 80309</p>
+    </div>
+  </div>
+  <button class="close-btn">Close</button>
+</dialog>
 </section>
-</body>
+  <script src="script.js"></script>
+
 <footer class="footer">
   <h1 id="fbigtext">We love seeing <br>what you make possible</h1>
 
@@ -173,5 +213,5 @@
 
   <p id="footnote">Materials: BTU LAB IS NOT A FREE SUPPLY STORE. But there are many ways to barter, including displaying your work in BTU, tagging us in social media, offering workshops, volunteering to organize supplies, and more. If you need something, we ask that you give something in return.</p>
 </footer>
-
+</body>
 </html>
