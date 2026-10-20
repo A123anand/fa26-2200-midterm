@@ -129,9 +129,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-font-family: "Racing Sans One", sans-serif;
+  font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
-font-style: normal;                
+  font-style: normal;   
+  margin-bottom: 2rem;           
 }
 .home-button {
   position: fixed;
@@ -223,6 +224,82 @@ font-style: normal;
   align-items: right;
   gap: 48px;
   font-family: 'Montserrat', sans-serif;
+}
+
+
+.indexquestion{
+  position: relative;
+  min-height: 400px;
+  display: grid;
+  place-items: center;          /* centers the content box */
+  padding: 2rem;
+  background-image: url('pictures/btuquestionbackground.jpg');
+  background-size: cover;       /* fill the section, cropping if needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+/* Dark layer between the image and the text */
+.indexquestion::before {
+  content: "";
+  position: absolute;
+  inset: 0;                     /* stretch to all four edges */
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.questioncontent {
+  position: relative;           /* puts the content above the overlay */
+  text-align: center;
+  max-width: 600px;
+}
+
+.indexquestion h2 {
+  color: var(--color-highlight);
+  text-align: center;
+}
+
+.btn1,.btn2,.btn3,.btn4 {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  margin: 0.25rem;
+  background: var(--color-accent);
+  color:var(--color-highlight);
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+}
+
+.btn:hover {
+  background: #a82229;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--color-highlight);
+  color: var(--color-highlight);
+}
+
+.btn-outline:hover {
+  background: var(--color-highlight);
+  color: var(--color-neutral);
+}
+
+dialog{
+  border: none;
+  border-radius: 8px;
+  padding: 24px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background-color: var(--color-highlight);
+}
+
+/* Style the dark overlay behind the pop-up */
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #footnote {
@@ -405,6 +482,36 @@ a.image-container:hover {
       text-align: center;
       /* cursor: pointer; */
       /* transition: all 0.1s ease; */
+}
+.layout3d{
+ display: flex;
+  gap: 1.5rem;
+  align-items: flex-start; 
+}
+.main3d {
+  flex: 7;
+}
+.aside3d{
+ flex: 3;
+  background-color: var(--color-neutral);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.aside3d p,
+.aside3d ul,
+.aside3d li{
+  color: var(--color-highlight);
+}
+
+.main3d,
+.aside3d {
+  min-width: 0;
+}
+
+.main3d img {
+  max-width: 100%;
+  height: auto;
 }
 /* physical-blockL */
 .physical-blockL {
@@ -652,4 +759,9 @@ margin:0;
     text-align: left;
   }
 
+}
+@media (max-width: 800px) {
+  .layout3d {
+    flex-direction: column;
+  }
 }
