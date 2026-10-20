@@ -404,7 +404,7 @@ a.image-container:hover {
 /* Physical block styling */
 .physical-blockC {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #0099ff;
       border-radius: 12px;
@@ -434,7 +434,7 @@ a.image-container:hover {
     }
 .physical-blockS {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #ffff00;
       border-radius: 12px;
@@ -455,7 +455,7 @@ a.image-container:hover {
     }
 .physical-block3d{
   /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: Purple;
       border-radius: 12px;
@@ -516,7 +516,7 @@ a.image-container:hover {
 /* physical-blockL */
 .physical-blockL {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: red;
       border-radius: 12px;
@@ -535,7 +535,7 @@ a.image-container:hover {
 }
 .physical-blockW {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: pink;
       border-radius: 12px;
@@ -554,7 +554,7 @@ a.image-container:hover {
 }
 .physical-blockT {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: GREEN;
       border-radius: 12px;
@@ -574,7 +574,7 @@ a.image-container:hover {
 
 .physical-blockE {
       /* Dimensions and shape */
-      width: 150px;
+     width: auto;
       height: 150px;
       background-color: #00ffff;
       border-radius: 12px;
@@ -760,6 +760,12 @@ margin:0;
   }
 
 }
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
 @media (max-width: 800px) {
   .layout3d {
     flex-direction: column;
