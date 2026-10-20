@@ -564,7 +564,7 @@ a.image-container:hover {
 
 .physical-blockE {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #00ffff;
       border-radius: 12px;
