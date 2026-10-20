@@ -329,16 +329,6 @@ a.image-container:hover {
       height: 150px;
       background-color: #0099ff;
       border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
       margin: 50px auto;
       display: flex;
       align-items: center;
@@ -355,7 +345,7 @@ a.image-container:hover {
     }
 .physical-blockS {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #ffff00;
       border-radius: 12px;
@@ -376,7 +366,7 @@ a.image-container:hover {
     }
 .physical-block3d{
   /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: Purple;
       border-radius: 12px;
@@ -407,7 +397,7 @@ a.image-container:hover {
 /* physical-blockL */
 .physical-blockL {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: red;
       border-radius: 12px;
@@ -426,7 +416,7 @@ a.image-container:hover {
 }
 .physical-blockW {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: pink;
       border-radius: 12px;
@@ -445,7 +435,7 @@ a.image-container:hover {
 }
 .physical-blockT {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: GREEN;
       border-radius: 12px;
@@ -465,7 +455,7 @@ a.image-container:hover {
 
 .physical-blockE {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #00ffff;
       border-radius: 12px;
@@ -617,4 +607,9 @@ main.faculty > section img {
     text-align: left;
   }
 
+}
+.word-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
 }
