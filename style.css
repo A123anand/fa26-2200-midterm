@@ -227,31 +227,89 @@ a {
 }
 
 
-.indexquestion{
+
+.indexquestion {
   position: relative;
-  min-height: 600px;
+  isolation: isolate;
+  min-height: 700px;
   display: grid;
-  place-items: center;          /* centers the content box */
+  place-items: center;
   padding: 2rem;
+
   background-image: url('pictures/btuquestionbackground.jpg');
-  background-size: cover;       /* fill the section, cropping if needed */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: var(--radius-lg);
+
   overflow: hidden;
 }
 
+/* Dark overlay over the background image */
 .indexquestion::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+/* Cloud transitions */
+.indexquestion::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: -20px;
+  pointer-events: none;
+
   background:
-    /* top fade: color of the block ABOVE this section */
-    linear-gradient(to bottom, var(--color-highlight) 0%, transparent 25%),
-    /* bottom fade: color of the block BELOW this section */
-    linear-gradient(to top, var(--color-neutral) 0%, transparent 25%),
-    /* your existing dark layer */
-    rgba(0, 0, 0, 0.5);
+    /* TOP: smooth fade from the block above */
+    linear-gradient(
+      to bottom,
+      var(--color-highlight) 0%,
+      var(--color-highlight) 2%,
+      color-mix(in srgb, var(--color-highlight) 100%, transparent) 10%,
+      transparent 30%
+    ),
+
+    /* BOTTOM: large, irregular cloud masses */
+    radial-gradient(
+      ellipse 34% 150px at 8% 105%,
+      var(--color-neutral) 50%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 28% 210px at 28% 108%,
+      var(--color-neutral) 45%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 38% 185px at 57% 108%,
+      var(--color-neutral) 50%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 30% 320px at 83% 110%,
+      var(--color-neutral) 35%,
+      transparent 100%
+    ),
+    radial-gradient(
+      ellipse 22% 170px at 100% 105%,
+      var(--color-neutral) 48%,
+      transparent 100%
+    );
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  /* Subtle blur instead of obvious scalloped edges */
+  filter: blur(8px);
+}
+
+/* Keep the content above the decorative overlays */
+.indexquestion > * {
+  position: relative;
+  z-index: 2;
 }
 
 .questioncontent {
