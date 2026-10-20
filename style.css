@@ -404,7 +404,7 @@ a.image-container:hover {
 /* Physical block styling */
 .physical-blockC {
       /* Dimensions and shape */
-      width: 150px;
+      width: auto;
       height: 150px;
       background-color: #0099ff;
       border-radius: 12px;
@@ -564,7 +564,7 @@ a.image-container:hover {
 
 .physical-blockE {
       /* Dimensions and shape */
-      width: auto;
+      width: 150px;
       height: 150px;
       background-color: #00ffff;
       border-radius: 12px;
@@ -749,11 +749,6 @@ margin:0;
     text-align: left;
   }
 
-}
-.word-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
 }
 @media (max-width: 800px) {
   .layout3d {
