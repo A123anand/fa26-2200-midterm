@@ -28,6 +28,10 @@
   --radius-lg: 12px;
 }
 
+body.homepage {
+  background-color: var(--color-accent);
+}
+
 .racing-sans-one-regular {
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
@@ -225,6 +229,11 @@ a {
   gap: 48px;
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+ overflow-y: scroll;
+}
+
 .introtext{
 margin-top: 8rem;
 margin-bottom: 8rem;
@@ -236,7 +245,7 @@ margin-bottom: 8rem;
   /* font-family: 'Oswald', sans-serif; */
   font-weight: bold;
   font-size: 1.25rem;
-  color: var(--color-accent);
+  color: var(--color-highlight);
 }
 
 .indexquestion {
@@ -277,9 +286,9 @@ margin-bottom: 8rem;
     /* TOP: smooth fade from the block above */
     linear-gradient(
       to bottom,
-      var(--color-highlight) 0%,
-      var(--color-highlight) 2%,
-      color-mix(in srgb, var(--color-highlight) 100%, transparent) 10%,
+      var(--color-accent) 0%,
+      var(--color-accent) 2%,
+      color-mix(in srgb, var(--color-accent) 100%, transparent) 10%,
       transparent 30%
     ),
 
