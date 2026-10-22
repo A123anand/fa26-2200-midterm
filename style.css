@@ -735,12 +735,14 @@ a.image-container:hover {
   flex-wrap: wrap; 
   align-items: flex-start; 
   gap: var(--spacing-lg); 
-}
-.row_icon img { 
-  width: 40%; 
-  height: 50%; 
+  /* center it */
   
 }
+/* .row_icon img { 
+  width: 40%; 
+  height: 50%;  */
+
+/* } */
 .row_icon .text { flex: 1; margin-top: 0; }
 .text { flex: 1; margin-top: 0; }
 /* .text p { margin-top: 0; } */
