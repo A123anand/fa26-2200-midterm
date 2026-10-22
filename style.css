@@ -124,12 +124,13 @@ a {
   font-size: 1rem;
 }
 .site-header {
-  background-image: url('pictures/explosion-1.jpg');
-  background-color: var(--color-neutral);
+  background-image: url('pictures/btuheader-cropped2.svg');
   background-size: cover;         
   background-position: center;    
   background-repeat: no-repeat;   
-  height: 300px;                  
+  height: 400px;
+  width: auto;
+ /* transform: scale(2);                */
   display: flex;
   align-items: center;
   justify-content: center;
