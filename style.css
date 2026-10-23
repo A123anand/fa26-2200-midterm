@@ -760,7 +760,7 @@ margin:0;
 .word-grid {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  grid-gap: 5px;
+
   /* repeat(auto-fit, minmax(150px, 1fr)); */
   gap: var(--spacing-md);
 }
