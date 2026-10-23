@@ -28,10 +28,28 @@
   --radius-lg: 12px;
 }
 
-body.homepage {
+.homepage {
   background-color: var(--color-accent);
+  position: relative;
 }
+.homepage::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -120px;
+  height: 120px;
+  z-index: 1;
+  pointer-events: none;
 
+  background: linear-gradient(to bottom, transparent, var(--color-accent));
+
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black);
+  mask-image: linear-gradient(to bottom, transparent, black);
+}
 .racing-sans-one-regular {
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
@@ -139,6 +157,7 @@ a {
   font-style: normal;   
   margin-bottom: var(--spacing-xl);  
 }
+
 .home-button {
   position: fixed;
   top: 0;
@@ -263,8 +282,13 @@ margin-bottom: 8rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('pictures/btuquestionbackground.jpg');
   overflow: hidden;
+  /* -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 40%);
+  mask-image: linear-gradient(to bottom, black 0%, transparent 40%); */
 }
 
 /* Dark overlay over the background image */
@@ -273,8 +297,10 @@ margin-bottom: 8rem;
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   pointer-events: none;
+   /* filter: blur(8px); */
+   
 }
 
 /* Cloud transitions */
@@ -523,78 +549,7 @@ a.image-container {
 a.image-container:hover {
   transform: scale(1.05);
 }
-/* Physical block styling */
-.physical-blockC {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #0099ff;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-blockS {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #ffff00;
-      border-radius: 12px;
-     
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-block3d{
-  /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: Purple;
-      border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-      box-sizing: border-box;
-      padding: 12px;
-      text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-}
+
 .layout3d{
  display: flex;
   gap: var(--spacing-lg);
@@ -625,102 +580,6 @@ a.image-container:hover {
   max-width: 100%;
   height: auto;
 }
-/* physical-blockL */
-.physical-blockL {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: red;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-.physical-blockW {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: pink;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-.physical-blockT {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: GREEN;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-
-.physical-blockE {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #00ffff;
-      border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-block:active {
-      transform: translateY(6px);
-      /* box-shadow: 
-        0 4px 0 #1b4f72, 
-        0 8px 10px rgba(0, 0, 0, 0.4); */
-    }
-
 .row { 
   display: flex; 
   flex-wrap: wrap; 
@@ -905,3 +764,175 @@ margin:0;
 }
 /* who what when where how  */
 /* still deciding on if i want cards or not */
+
+
+
+/* physical-block styles */
+
+.physical-blockC {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: #0099ff;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-highlight);
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-blockS {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: #ffff00;
+      border-radius: 12px;
+     
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-block3d{
+  /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: Purple;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-highlight);
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+}
+
+/* physical-blockL */
+.physical-blockL {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: red;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-highlight);
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+.physical-blockW {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: pink;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+.physical-blockT {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: GREEN;
+      border-radius: 12px;
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+     
+}
+
+.physical-blockE {
+      /* Dimensions and shape */
+      width: auto;
+      height: 150px;
+      background-color: #00ffff;
+      border-radius: 12px;
+      /* Physical edges and 3D light simulation */
+      /* border-top: 4px solid #5dade2;
+      border-left: 4px solid #5dade2;
+      border-right: 4px solid #2e86c1;
+      border-bottom: 4px solid #1b4f72; */
+      /* Multi-layered shadow for 3D elevation */
+      /* box-shadow: 
+        0 10px 0 #1b4f72, 
+        0 15px 20px rgba(0, 0, 0, 0.4); */
+      /* Center it on the page for viewing */
+      margin: 50px auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  text-align: center;
+      /* cursor: pointer; */
+      /* transition: all 0.1s ease; */
+    }
+.physical-block:active {
+      transform: translateY(6px);
+      /* box-shadow: 
+        0 4px 0 #1b4f72, 
+        0 8px 10px rgba(0, 0, 0, 0.4); */
+    }
