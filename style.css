@@ -938,3 +938,6 @@ margin:0;
         0 4px 0 #1b4f72, 
         0 8px 10px rgba(0, 0, 0, 0.4); */
     }
+.needle  {
+  filter: brightness(0.85) saturate(150%);
+}
