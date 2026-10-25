@@ -6,16 +6,16 @@
     <title>Faculty</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body id="main">
+<body>
     <a class="skip-link" href="#main">Skip to main content</a>
        <header class="site-header">
-        <a class="home-button" href="index.html">
-            <img src="btu-logo/btu-symbol-nobackground.png" alt="BTU Symbol - Also takes you to the home page" width="40" height="40">
-            <span>BTU</span>
-        </a>
+        <a class="home-button" href="index.html" aria-label="BTU home">
+    <img src="btu-logo/btu-symbol-nobackground.png" alt="BTU Symbol - Also takes you to the home page" width="40" height="40">
+    <span>BTU</span>
+</a>
 
-        <nav class="corner-menu" id="corner-menu">
-            <button id="menu-button" class="menu-button" aria-label="Toggle menu"
+        <nav class="corner-menu" id="corner-menu" aria-label="Main">
+            <button id="menu-button" class="menu-button" aria-label="Menu"
         aria-expanded="false" aria-controls="menu-list">☰</button>
             <ul class="menu-list" id="menu-list">
                 <li><a href="index.html">Home</a></li>
@@ -37,7 +37,7 @@
                     <li><a href="abt-html/contact.html">Contact</a></li>
                 </ul> -->
                 <li class="divider" role="separator"></li>
-                <li><a href="faculty.html">Faculty</a></li>
+                <li><a href="faculty.html" aria-current="page">Faculty</a></li>
                 <li><a href="calendar.html">Calendar</a></li>
                 <li><a href="workshop.html">Workshops</a></li>
             </ul>
@@ -47,6 +47,7 @@
                 <h1 style="text-align: center;">Faculty</h1>
                 <p></p>
             </div>
+    </div>
     </header>
 
 <!-- Possible improvements:
@@ -55,8 +56,8 @@ Make emails clickable
 Make this information up-to-date (this is Sp26 info) 
 What does General Tools mean. Hello -->
 
- <main class="faculty">   
-    <h2>Welcome & Welcome Back</h2>
+ <main class="faculty" id="main"> 
+    <h2>Welcome &amp; Welcome Back</h2>
     <p>The BTU Lab exists to facilitate as much student, faculty and staff coursework, research and experimentation as possible. We support as many as 7000 coursework hours per semester.
 
 Because of this incredible demand, expectations for students, including yours, and faculty are covered in a series of brief, mandatory, one-time orientations.
@@ -193,13 +194,13 @@ As always, if you have any questions please contact me at "zack.weaver@colorado.
     </p>
 </div>
 </section>
-<h2>Volunteer & Emeritus Mischief Makers</h2>
+<h2>Volunteer &amp; Emeritus Mischief Makers</h2>
 <section id="7">
     <h3>Danny Rankin</h3>
     <img src="pictures/facultyimages/danny.jpg" alt="Danny Rankin">
     <div class="info">
     <p>Director, Whaaat!? Lab | Assistant Teaching Professor, ATLAS Institute.</p>
-    <p>danny.rankin@colorado.edu@colorado.edu</p>
+    <p>danny.rankin@colorado.edu</p>
             <h4>Skills</h4>
             <ul>
                 <li>Woodworking</li>
@@ -221,16 +222,15 @@ As always, if you have any questions please contact me at "zack.weaver@colorado.
             <ul>
                 <li>General Tools</li>
                 <li>Sewing (Machine/Hand)</li>
-                <li>Graphic Design & various design software</li>
+                <li>Graphic Design &amp; various design software
                 <ul>
                 <li>Adobe Suite</li>
                 <li>Semiotics stuff (yay!)</li>
-                </ul>
+                </ul></li>
                 <li>Soldering</li>
                 <li>Laser cutting</li>
                 <li>Basic 3d printing/modeling help</li>
             </ul>
-    </p>
 </div>
 </section>
 <section id="9">
