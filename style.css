@@ -181,6 +181,9 @@ a {
 .home-button:hover {
   background-color:#7d3c49;
 }
+.home-button:focus-visible,
+.menu-button:focus-visible,
+.footer a:focus-visible { outline-color: var(--color-highlight); }
 .corner-menu {
   position: fixed;
   /* border: 0; */
@@ -194,6 +197,29 @@ a {
   /* color: black;
   background-color: none; */
  
+}
+/* .corner-menu:hover .menu-list { */
+  /* background: var(--color-accent); */
+  /* background:var(--color-highlight); */
+  /* display: block; /* Shows menu on hover for a simple pure-CSS approach */
+  /* opacity: 1; */
+  /* visibility: visible; */
+  /* transform: translateY(0); */
+/* } */
+/* @media (hover: hover) {
+  .corner-menu:hover .menu-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+} */
+.corner-menu:hover .menu-list,
+.corner-menu:focus-within .menu-list {
+  background: var(--color-highlight);
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .menu-list {
   display: block; 
@@ -230,21 +256,7 @@ a {
 }
 
 
-.corner-menu:hover .menu-list {
-  /* background: var(--color-accent); */
-  background:var(--color-highlight);
-  display: block; /* Shows menu on hover for a simple pure-CSS approach */
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-@media (hover: hover) {
-  .corner-menu:hover .menu-list {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
+
 .nav {
   display: flex;
   align-items: right;
@@ -662,6 +674,12 @@ main.faculty > section img {
   font-style: normal;
   line-height: 1.5;
 }
+.footer p,
+.footer address,
+.footer a,
+.footer h1 {
+  color: var(--color-highlight);
+}
 
 section.giving{
  display: grid;
@@ -940,4 +958,8 @@ margin:0;
     }
 .needle  {
   filter: brightness(0.85) saturate(150%);
+}
+a:focus-visible, button:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 2px;
 }
