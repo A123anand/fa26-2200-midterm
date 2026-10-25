@@ -976,3 +976,5 @@ a:focus-visible, button:focus-visible {
   background: var(--color-neutral);
   color: var(--color-highlight);
 }
+.btn1, .btn2, .btn3, .btn4, .close-btn { background: #A82229; }  /* 5.85:1 */
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .close-btn:hover { background: #8A1B21; } /* 7.57:1 */
