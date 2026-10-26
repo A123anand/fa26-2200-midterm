@@ -6,6 +6,15 @@
   --color-accent: #CE2C34;     /* broght red - Neutral Text and Background */
   --color-highlight: #EEE9C6;   /* cream neutral - Accent / Attention Color */
   
+   /* Resources Colors */
+  --color-cnc: blue;   
+  --color-3d: Purple;  
+  --color-lasers: red;    
+  --color-wood: pink;    
+  --color-tools: green;  
+  --color-electronics: teal;    
+  --color-sewing: yellow; 
+  
   /* Derived Colors for Flexibility */
   --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
   --color-text-dark: var(--color-neutral);
