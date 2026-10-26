@@ -7,15 +7,15 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
      <header class="site-header">
         <a class="home-button" href="index.html">
             <img src="btu-logo/btu-symbol-nobackground.png" alt="BTU Symbol - Also takes you to the home page" width="40" height="40">
             <span>BTU</span>
         </a>
 
-        <nav class="corner-menu" id="corner-menu">
-            <button id="menu-button" class="menu-button" aria-label="Toggle menu"
-        aria-expanded="false" aria-controls="menu-list">☰</button>
+        <nav class="corner-menu" id="corner-menu" aria-label="Main">
+            <button id="menu-button" class="menu-button" aria-label="Menu" aria-controls="menu-list">☰</button>
             <ul class="menu-list" id = "menu-list">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resources.html">Resources</a></li>
@@ -29,7 +29,7 @@
                     <li><a href="resources-html/tools.html">Tools</a></li>
 
                 </ul> -->
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html" aria-current="page">About</a></li>
                 <!-- <ul class="submenuA">
                     <li><a href="abt-html/rules.html">Rules and Policies</a></li>
                     <li><a href="abt-html/support.html">Support</a></li>
@@ -45,6 +45,7 @@
             <div class="page-intro">
                 <h1 style="text-align: center;">About</h1>
                 <p></p>
+            </div>
             </div>
     </header>
     <!-- <h1>About</h1> -->
