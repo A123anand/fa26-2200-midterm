@@ -213,46 +213,51 @@ a {
   background-color: none; */
  
 }
-/* .corner-menu:hover .menu-list { */
-  /* background: var(--color-accent); */
-  /* background:var(--color-highlight); */
-  /* display: block; /* Shows menu on hover for a simple pure-CSS approach */
-  /* opacity: 1; */
-  /* visibility: visible; */
-  /* transform: translateY(0); */
-/* } */
-/* @media (hover: hover) {
-  .corner-menu:hover .menu-list {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-} */
-.corner-menu:hover .menu-list,
-.corner-menu:focus-within .menu-list {
-  background: var(--color-highlight);
+
+ .menu-list {
   display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.menu-list {
-  display: block; 
   list-style: none;
-  background: none;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin-top: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin: 5px 0 0;
+  padding: var(--spacing-sm);
+  width: 280px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+
   position: absolute;
   top: 100%;
   right: 12px;
-  width: 280px;
-  max-height: calc(100vh - 80px);
+
+  background: var(--color-neutral);       
+  border: 0;
+  border-radius: var(--radius-lg);        
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
   opacity: 0;
+  visibility: hidden;                     
   font-family: "lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+}
+.menu-list a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-highlight);          
+  text-decoration: none;
+  border-radius: var(--radius-md);
+}
+
+.menu-list a:hover,
+.menu-list a:focus-visible {
+  background: #7d3c49;                  
+  outline-color: var(--color-highlight);
+}
+
+.menu-list a[aria-current="page"] {
+  font-weight: 700;                     
+}
+
+.corner-menu:hover .menu-list,
+.corner-menu:focus-within .menu-list {
+  opacity: 1;
+  visibility: visible;
 }
 .menu-button {
   width: 44px;
@@ -503,7 +508,7 @@ max-width: 700px;
 .submenuR, .submenuA {
   display: block; /* Hide by default, toggle with JS or hover */
   list-style: none;
-  border: 1px solid #ccc;
+  border: 0;
   padding: 10px;
   margin-top: 5px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -511,6 +516,9 @@ max-width: 700px;
   padding: 8px 28px 8px 48px;
   font-size: 0.92rem;
   opacity: 0.8;
+}
+.divider{
+  display: none;
 }
 .calendar {
   text-align: center;
