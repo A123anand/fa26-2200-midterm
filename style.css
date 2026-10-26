@@ -10,10 +10,10 @@
   --color-cnc: blue;   
   --color-3d: Purple;  
   --color-lasers: red;    
-  --color-wood: pink;    
+  --color-wood: rgb(201, 33, 131);    
   --color-tools: green;  
   --color-electronics: teal;    
-  --color-sewing: yellow; 
+  --color-sewing: rgb(151, 151, 33); 
   
   /* Derived Colors for Flexibility */
   --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
@@ -649,6 +649,28 @@ a.image-container:hover {
 .row_icon .text { flex: 1; margin-top: 0; }
 .text { flex: 1; margin-top: 0; }
 /* .text p { margin-top: 0; } */
+
+.row_icon #print {
+  color: var(--color-3d);
+}
+.row_icon #wood {
+  color: var(--color-wood);
+}
+.row_icon #lasers {
+  color: var(--color-lasers);
+}
+.row_icon #electronics {
+  color: var(--color-electronics);
+}
+.row_icon #tools {
+  color: var(--color-tools);
+}
+.row_icon #sewing {
+  color: var(--color-sewing);
+}
+.row_icon #cnc {
+  color: var(--color-cnc);
+}
 
 
 main.faculty {
