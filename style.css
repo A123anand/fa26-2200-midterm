@@ -830,177 +830,6 @@ grid-column: auto;
 /* who what when where how  */
 /* still deciding on if i want cards or not */
 
-
-
-/* physical-block styles */
-
-.physical-blockC {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #0099ff;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-blockS {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #ffff00;
-      border-radius: 12px;
-     
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-block3d{
-  /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: Purple;
-      border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-      box-sizing: border-box;
-      padding: 12px;
-      text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-}
-
-/* physical-blockL */
-.physical-blockL {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: red;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-highlight);
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-.physical-blockW {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: pink;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-.physical-blockT {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: GREEN;
-      border-radius: 12px;
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-     
-}
-
-.physical-blockE {
-      /* Dimensions and shape */
-      width: auto;
-      height: 150px;
-      background-color: #00ffff;
-      border-radius: 12px;
-      /* Physical edges and 3D light simulation */
-      /* border-top: 4px solid #5dade2;
-      border-left: 4px solid #5dade2;
-      border-right: 4px solid #2e86c1;
-      border-bottom: 4px solid #1b4f72; */
-      /* Multi-layered shadow for 3D elevation */
-      /* box-shadow: 
-        0 10px 0 #1b4f72, 
-        0 15px 20px rgba(0, 0, 0, 0.4); */
-      /* Center it on the page for viewing */
-      margin: 50px auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: black;
-      font-weight: bold;
-      font-family: sans-serif;
-      flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 12px;
-  text-align: center;
-      /* cursor: pointer; */
-      /* transition: all 0.1s ease; */
-    }
-.physical-block:active {
-      transform: translateY(6px);
-      /* box-shadow: 
-        0 4px 0 #1b4f72, 
-        0 8px 10px rgba(0, 0, 0, 0.4); */
-    }
 .needle  {
   filter: brightness(0.85) saturate(150%);
 }
@@ -1021,8 +850,8 @@ a:focus-visible, button:focus-visible {
   background: var(--color-neutral);
   color: var(--color-highlight);
 }
-.btn1, .btn2, .btn3, .btn4, .close-btn { background: #A82229; }  /* 5.85:1 */
-.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .close-btn:hover { background: #8A1B21; } /* 7.57:1 */
+.btn1, .btn2, .btn3, .btn4, .close-btn { background: #A82229; }  
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .close-btn:hover { background: #8A1B21; }
 .page-intro h1 {
   font-size: clamp(2.2rem, 6vw, 4rem);
   text-align: center;
@@ -1069,7 +898,6 @@ a:focus-visible, button:focus-visible {
   margin-bottom: 0;
 }
 
-/* Tablet & Desktop Layout Adjustment */
 @media (min-width: 768px) {
   .contact-container {
     flex-direction: row;
