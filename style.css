@@ -9,11 +9,11 @@
    /* Resources Colors */
   --color-cnc: blue;   
   --color-3d: Purple;  
-  --color-lasers: red;    
-  --color-wood: rgb(201, 33, 131);    
-  --color-tools: green;  
-  --color-electronics: teal;    
-  --color-sewing: rgb(151, 151, 33); 
+  --color-lasers: rgb(168, 3, 3);    
+  --color-wood: rgb(143, 1, 84);    
+  --color-tools: rgb(1, 84, 1);  
+  --color-electronics: rgb(1, 83, 83);    
+  --color-sewing: rgb(104, 104, 0); 
   
   /* Derived Colors for Flexibility */
   --color-background: color-mix(in srgb, var(--color-neutral) 10%, white);
