@@ -31,6 +31,7 @@
 .homepage {
   background-color: var(--color-accent);
   position: relative;
+   padding-top: var(--spacing-xs); 
 }
 .homepage::before {
   content: "";
@@ -155,7 +156,7 @@ a {
   font-family: "Racing Sans One", sans-serif;
   font-weight: 400;
   font-style: normal;   
-  margin-bottom: var(--spacing-xl);  
+  margin-bottom: 5rem;  
 }
 
 .home-button {
@@ -269,8 +270,9 @@ html {
 }
 
 .introtext{
-margin-top: 8rem;
-margin-bottom: 8rem;
+margin: 8rem auto;
+max-width: 700px;
+  padding: 0 var(--spacing-md);
 }
 
 .introtext p{
@@ -303,7 +305,7 @@ margin-bottom: 8rem;
   mask-image: linear-gradient(to bottom, black 0%, transparent 40%); */
 }
 
-/* Dark overlay over the background image */
+/* dark overlay over the background image */
 .indexquestion::before {
   content: "";
   position: absolute;
@@ -368,7 +370,7 @@ margin-bottom: 8rem;
 }
 
 /* Keep the content above the decorative overlays */
-.indexquestion > * {
+.indexquestion > *:not([popover]) {
   position: relative;
   z-index: 2;
 }
@@ -379,9 +381,15 @@ margin-bottom: 8rem;
   max-width: 600px;
 }
 
-.indexquestion h2 {
+.questioncontent > h2 {
   color: var(--color-highlight);
   text-align: center;
+}
+
+.indexquestion [popover] h2 {
+   color: var(--color-secondary);
+  text-align: left;
+  margin-top: 0;
 }
 
 .btn1, .btn2, .btn3, .btn4, .close-btn {
@@ -413,7 +421,7 @@ margin-bottom: 8rem;
   color: var(--color-neutral);
 }
 
-dialog {
+[popover] {
   border: none;
   border-radius: var(--radius-md);
   padding: 24px;
@@ -423,14 +431,14 @@ dialog {
   background-color: var(--color-highlight);
 }
 
-dialog::backdrop {
+[popover]::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Beat the .indexquestion h2 rule (cream text) */
 .indexquestion dialog h2 {
-  color: var(--color-secondary);
-  text-align: left;
+  color: var(--color-highlight);
+  text-align: center;
   margin-top: 0;
 }
 
