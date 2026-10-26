@@ -647,7 +647,9 @@ a.image-container:hover {
   align-items: flex-start; 
   gap: var(--spacing-lg); 
   /* center it */
-  
+  border-radius: 0cap;
+  border-color: var(--color-3d);
+  border-width: 3px;
 }
 /* .row_icon img { 
   width: 40%; 
@@ -660,12 +662,15 @@ a.image-container:hover {
 
 .row_icon #print {
   color: var(--color-3d);
+  border-color: var(--color-3d);
 }
 .row_icon #wood {
   color: var(--color-wood);
+  border-color: var(--color-wood);
 }
 .row_icon #lasers {
   color: var(--color-lasers);
+  border-color: var(--color-lasers);
 }
 .row_icon #electronics {
   color: var(--color-electronics);
