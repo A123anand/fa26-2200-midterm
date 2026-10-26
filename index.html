@@ -55,95 +55,28 @@
         </div>
     </header>
 </div>
-<!-- 
-    <h2>WTF is the BTU? </h2>
-    <div class="row"> -->
        <div class="homepage">
     <!-- <img src="pictures/btu-who.jpg" alt="Picture of people in the btu lab" height="auto" width="600"> -->
      <div class="introtext">
     <p>
         The ATLAS BTU Lab is an inclusive community makerspace facilitating projects at the intersection of Art, Design,
-        Engineering and Architecture.</p><p>It serves multiple functions as a general workspace, and workshop host.</p><p>Any CU
-        student can gain access to BTU.</p>
-        <p>Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental
+        Engineering and Architecture.It serves multiple functions as a general workspace, and workshop host. Any CU
+        student can gain access to BTU.
+        Our goal is to provide the most diverse, inclusive environment for makers of all types in a highly experimental
         and productive space.</p>
     </div>
-    <!-- </div>
-
-
-
-
-    <h2 style="text-align: right;">WHO?</h2>
-    <div class="row">
-        
-    <div class="text">
-    <p style="text-align: right;">
-        Anyone* can gain access to BTU. Our goal is to provide the most diverse, inclusive environment for makers of all
-        types in a highly experimental and productive space.<br>
-        <p></p>
-        <p id="footnote" style="text-align: right;">
-        *Due to increased campus security, we are currently unable to sponsor BuffOne Guest cards.
-        </p>
-    </p>
-    </div>
-    <img src="pictures/btu-how.jpg" alt="Picture of people in the btu lab" height="auto" width="600">
-    </div>
-    
-
-    <h2>When?</h2>
-    <div class="row">
-        <img src="pictures/btu-when.jpg" alt="Picture of people in the btu lab" height="auto" width="600">
-        <div class="text">
-    <p>
-        The orientation* schedule, and all scheduled events can be found on the BTU Calendar.
-    </p>
-    <p id="footnote">
-        *Some things involve separate orientations...like lasers and stuff.
-        Check the calendar and the pages above for your interests.
-    </p>
-    </div>
-    </div>
-    <h2 style="text-align: right;">How?</h2>
-    <div class="row">
-        <div class="text">
-            <p style="text-align: right;">
-                New members attend a 20 minute general orientation covering community expectations, safety and equipment.
-            </p>
-        </div>
-        <img src="pictures/btu-when.jpg" alt="Picture of people in the btu lab" height="auto" width="600">
-    </div>
-    <div style="text-align: center;">
-    <h2>Where?</h2>
-<div class="row">
-    <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1528.0212105286407!2d-105.269931!3d40.0075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876bec33866b4d51%3A0xa4ced41760be8040!2s320%20UCB%2C%201125%2018th%20St%2C%20Boulder%2C%20CO%2080309!5e0!3m2!1sen!2sus!4v1789944792513!5m2!1sen!2sus"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    <div class="text">
-  
-    <p id="location">
-        320 UCB
-        <br> 1125 18th St
-        <br> Boulder, CO 80309 <br>
-        </p>
-        <p>
-    </p>
-    </div>
-    
-    </div>
-</div> -->
 
 
 <section class="indexquestion">
   <div class="questioncontent">
-    <h2>BTU FAQ</h2>
-    <button class="btn1" data-dialog="dialog-who">Who</button>
-    <button class="btn2" data-dialog="dialog-when">When</button>
-    <button class="btn3" data-dialog="dialog-how">How</button>
-    <button class="btn4" data-dialog="dialog-where">Where</button>
-  </div>
+  <h2>BTU FAQ</h2>
+  <button class="btn1" popovertarget="pop-who">Who</button>
+  <button class="btn2" popovertarget="pop-when">When</button>
+  <button class="btn3" popovertarget="pop-how">How</button>
+  <button class="btn4" popovertarget="pop-where">Where</button>
+</div>
 
-<dialog id="dialog-who">
+<div id="pop-who" popover>
   <h2>Who?</h2>
   <div class="popupcontent">
     <img src="pictures/btu-who.jpg" alt="People in the BTU Lab">
@@ -152,10 +85,10 @@
       <p class="footnote">*Due to increased campus security, we are currently unable to sponsor BuffOne Guest cards.</p>
     </div>
   </div>
-  <button class="close-btn">Close</button>
-</dialog>
+  <button class="close-btn" popovertarget="pop-who" popovertargetaction="hide">Close</button>
+</div>
 
-<dialog id="dialog-when">
+<div id="pop-when" popover>
   <h2>When?</h2>
   <div class="popupcontent">
     <img src="pictures/btu-when.jpg" alt="People in the BTU Lab">
@@ -164,10 +97,10 @@
       <p class="footnote">*Some things involve separate orientations...like lasers and stuff. Check the calendar and the pages above for your interests.</p>
     </div>
   </div>
-  <button class="close-btn">Close</button>
-</dialog>
+  <button class="close-btn" popovertarget="pop-when" popovertargetaction="hide">Close</button>
+</div>
 
-<dialog id="dialog-how">
+<div id="pop-how" popover>
   <h2>How?</h2>
   <div class="popupcontent">
     <img src="pictures/btu-when.jpg" alt="People in the BTU Lab">
@@ -175,10 +108,10 @@
       <p>New members attend a 20 minute general orientation covering community expectations, safety and equipment.</p>
     </div>
   </div>
-  <button class="close-btn">Close</button>
-</dialog>
+  <button class="close-btn" popovertarget="pop-how" popovertargetaction="hide">Close</button>
+</div>
 
-<dialog id="dialog-where">
+<div id="pop-where" popover>
   <h2>Where?</h2>
   <div class="popupcontent">
     <iframe
@@ -190,8 +123,9 @@
       <p>320 UCB<br>1125 18th St<br>Boulder, CO 80309</p>
     </div>
   </div>
-  <button class="close-btn">Close</button>
-</dialog>
+  <button class="close-btn" popovertarget="pop-where" popovertargetaction="hide">Close</button>
+</div>
+
 </section>
   <script src="script.js"></script>
 </div> <!-- .homepage -->
